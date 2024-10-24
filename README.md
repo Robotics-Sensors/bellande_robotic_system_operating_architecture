@@ -1,4 +1,4 @@
-# Bellande Robotic System Operating Architecture(BRSOA)
+# Bellande Robotic System Operating Architecture (BRSOA)
 
 # BRSOA Operating System
 - BRSOA works in any operating system but it has its own dedicated Operating System called BellandeOS
