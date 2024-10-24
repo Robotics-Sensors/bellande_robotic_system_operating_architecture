@@ -14,7 +14,7 @@
 - https://github.com/Architecture-Mechanism/bellronos_installer
 - https://github.com/Architecture-Mechanism/bellronos
 
-## Bellande Mesh Sync System
+## BRSOA Bellande Mesh Sync System
 - https://github.com/Architecture-Mechanism/bellande_mesh_sync
 
 ## Publication to be Release Soon
