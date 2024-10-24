@@ -3,6 +3,9 @@
 # BRSOA Operating System
 - BRSOA works in any operating system but it has its own dedicated Operating System called BellandeOS
 
+## Operating System Package Manager
+- https://github.com/Architecture-Mechanism/bellande_operating_system_package_manager
+
 ## BRSOA File Format
 - https://github.com/Architecture-Mechanism/bellande_format
 
@@ -16,6 +19,7 @@
 
 ## BRSOA Bellande Mesh Sync System
 - https://github.com/Architecture-Mechanism/bellande_mesh_sync
+
 
 ## Publication to be Release Soon
 -
