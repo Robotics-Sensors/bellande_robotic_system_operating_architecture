@@ -1,0 +1,4 @@
+dependencies:
+- common_msgs
+language: go
+name: example_package

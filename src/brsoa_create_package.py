@@ -15,6 +15,7 @@
 
 import os
 import argparse
+import yaml
 from bellande_parser.bellande_parser import Bellande_Format
 
 TEMPLATE_DIR = "templates"
