@@ -1,0 +1,2 @@
+# System Config
+python3 ../src/brsoa_create_system_config.py
