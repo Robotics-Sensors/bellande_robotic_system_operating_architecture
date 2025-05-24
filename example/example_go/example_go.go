@@ -6,17 +6,17 @@ import (
     "common_msgs"
 )
 
-type Example_package struct{}
+type Example_go struct{}
 
-func (n *Example_package) Run() {
+func (n *Example_go) Run() {
     for {
         // TODO: Implement node logic
-        fmt.Println("Running example_package")
+        fmt.Println("Running example_go")
         time.Sleep(1 * time.Second)
     }
 }
 
 func main() {
-    node := &Example_package{}
+    node := &Example_go{}
     node.Run()
 }

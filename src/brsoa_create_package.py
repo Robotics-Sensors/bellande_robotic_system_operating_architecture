@@ -147,7 +147,7 @@ def create_package(directory, package_name, language):
     
     # Create package.bellande
     with open(os.path.join(package_dir, "package.bellande"), "w") as f:
-        f.write(create_package_bellande(package_name, language, ["common_msgs"]))
+        f.write(create_package_bellande(directory+package_name, language, ["common_msgs"]))
 
     # Create source file
     source_creators = {
@@ -169,9 +169,10 @@ def create_package(directory, package_name, language):
             source_filename = f"{package_name.capitalize()}.java"
         elif language == "rust":
             source_filename = f"{package_name}.rust"
-            os.makedirs(os.path.join(package_dir, "src"), exist_ok=True)
+            
             with open(os.path.join(package_dir, "Cargo.toml"), "w") as f:
                 f.write(f"[package]\nname = \"{package_name}\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[dependencies]\ncommon_msgs = {{ path = \"../../build/common_msgs\" }}\n")
+        
         elif language == "go":
             source_filename = f"{package_name}.go"
         

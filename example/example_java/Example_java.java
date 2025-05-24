@@ -1,10 +1,10 @@
 import common_msgs.Messages.*;
 
-public class Example_package {
+public class Example_java {
     public void run() {
         while (true) {
             // TODO: Implement node logic
-            System.out.println("Running example_package");
+            System.out.println("Running example_java");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -14,7 +14,7 @@ public class Example_package {
     }
 
     public static void main(String[] args) {
-        Example_package node = new Example_package();
+        Example_java node = new Example_java();
         node.run();
     }
 }

@@ -1,19 +1,19 @@
 use common_msgs::*;
 use std::{thread, time};
 
-struct Example_package;
+struct Example_rust;
 
-impl Example_package {
+impl Example_rust {
     fn run(&self) {
         loop {
             // TODO: Implement node logic
-            println!("Running example_package");
+            println!("Running example_rust");
             thread::sleep(time::Duration::from_secs(1));
         }
     }
 }
 
 fn main() {
-    let node = Example_package{};
+    let node = Example_rust{};
     node.run();
 }

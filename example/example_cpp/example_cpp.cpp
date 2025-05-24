@@ -3,19 +3,19 @@
 #include <chrono>
 #include <thread>
 
-class Example_package {
+class Example_cpp {
 public:
     void run() {
         while (true) {
             // TODO: Implement node logic
-            std::cout << "Running example_package" << std::endl;
+            std::cout << "Running example_cpp" << std::endl;
             std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     }
 };
 
 int main(int argc, char** argv) {
-    Example_package node;
+    Example_cpp node;
     node.run();
     return 0;
 }
