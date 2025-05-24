@@ -16,7 +16,7 @@
 #!/usr/bin/env python3
 
 # Will later be programming bellronos
-def create_example_lua_config_file(filename="brsoa_system_config.lua"):
+def create_lua_config_file(filename="brsoa_system_config.lua"):
     """
     Creates an example Lua configuration file for a robot system with generic settings.
     
@@ -121,9 +121,12 @@ parameters = {
         return False
 
 
+def create_bellande_config_file():
+    pass
+
 if __name__ == "__main__":
     # Create the example Lua configuration file
-    success = create_example_lua_config_file()
+    success = create_lua_config_file()
     
     if success:
         print("Example configuration file creation completed.")
