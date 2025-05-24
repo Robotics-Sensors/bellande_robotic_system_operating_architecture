@@ -1,4 +1,4 @@
 dependencies:
 - common_msgs
 language: go
-name: ../exampleexample_go
+name: example_go

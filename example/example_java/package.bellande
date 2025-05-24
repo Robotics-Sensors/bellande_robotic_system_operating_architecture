@@ -1,4 +1,4 @@
 dependencies:
 - common_msgs
 language: java
-name: ../exampleexample_java
+name: example_java

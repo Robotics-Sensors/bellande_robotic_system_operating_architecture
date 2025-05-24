@@ -147,7 +147,7 @@ def create_package(directory, package_name, language):
     
     # Create package.bellande
     with open(os.path.join(package_dir, "package.bellande"), "w") as f:
-        f.write(create_package_bellande(directory+package_name, language, ["common_msgs"]))
+        f.write(create_package_bellande(package_name, language, ["common_msgs"]))
 
     # Create source file
     source_creators = {

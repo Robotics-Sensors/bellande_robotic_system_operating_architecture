@@ -1,4 +1,4 @@
 dependencies:
 - common_msgs
 language: rust
-name: ../exampleexample_rust
+name: example_rust
