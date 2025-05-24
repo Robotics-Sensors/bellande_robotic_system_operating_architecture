@@ -138,10 +138,13 @@ func main() {{
 }}
 """
 
-def create_package(package_name, language):
-    package_dir = os.path.join("src", package_name)
+def create_package(directory, package_name, language):
+    package_dir = os.path.join(directory, package_name)
     os.makedirs(package_dir, exist_ok=True)
 
+    # Make Directory for package if it exits
+    os.makedirs(package_dir, exist_ok=True)
+    
     # Create package.bellande
     with open(os.path.join(package_dir, "package.bellande"), "w") as f:
         f.write(create_package_bellande(package_name, language, ["common_msgs"]))
@@ -165,7 +168,7 @@ def create_package(package_name, language):
         elif language == "java":
             source_filename = f"{package_name.capitalize()}.java"
         elif language == "rust":
-            source_filename = "main.rs"
+            source_filename = f"{package_name}.rust"
             os.makedirs(os.path.join(package_dir, "src"), exist_ok=True)
             with open(os.path.join(package_dir, "Cargo.toml"), "w") as f:
                 f.write(f"[package]\nname = \"{package_name}\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[dependencies]\ncommon_msgs = {{ path = \"../../build/common_msgs\" }}\n")
@@ -179,10 +182,11 @@ def create_package(package_name, language):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Create a new package for the robot architecture.")
+    parser.add_argument("directory", help="Directory where you want to make it")
     parser.add_argument("package_name", help="Name of the package to create")
     parser.add_argument("language", choices=["cpp", "python", "java", "rust", "go"], help="Programming language for the package")
     
     args = parser.parse_args()
     
-    create_package(args.package_name, args.language)
+    create_package(args.directory, args.package_name, args.language)
     print(f"Created package {args.package_name} using {args.language}")

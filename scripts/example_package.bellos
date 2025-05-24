@@ -1,0 +1,14 @@
+# Example Package for CPP
+python3 ../src/brsoa_create_package.py ../example example_package cpp
+
+# Example Package for Python
+python3 ../src/brsoa_create_package.py ../example example_package python
+
+# Example Package for Java
+python3 ../src/brsoa_create_package.py ../example example_package java
+
+# Example Package for Rust
+python3 ../src/brsoa_create_package.py ../example example_package rust
+
+# Example Package for Go
+python3 ../src/brsoa_create_package.py ../example example_package go
